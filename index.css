@@ -12,9 +12,9 @@
 }
 
 .loginSection{
-    margin-left: 330px;
+    margin-left: 250px;
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .admin,.student{
@@ -53,6 +53,7 @@
 
 .register{
     background-color: #b16e0a;
+    text-decoration: none;
 }
 
 .upcomingExam{
