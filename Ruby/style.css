@@ -1,0 +1,277 @@
+
+
+.topbox
+{
+	padding-top: 100px;
+	margin: 20px;
+	background-image: url(topboximg.jpg);
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 50px;
+}
+
+.headline
+{
+	color: #fafa2f;
+	padding: 5px;
+	margin: 10px;
+	font-size: 3em;
+    text-align: center;
+
+}
+
+.para
+{
+	color: #a4f1f5;
+	font-weight: 400;
+	padding: 20px;
+	margin: 10px;
+    border: 3px solid #fafa2f;
+    font-size: 1.4em;
+    background-color: rgba(6, 3, 43,0.5);
+    text-align: center;
+}
+
+
+
+.card-img-top
+{
+	height: 500px;
+}
+
+.card-body
+{
+	background-color: rgba(37, 198, 207,0.2);
+}
+
+.card-body-in
+{
+	color: #0c0036;
+	text-align: center;
+	font-weight: 500
+}
+
+/*Etm faculty*/
+
+.etm_body
+{
+  background-image: linear-gradient(to bottom right,#ffffff,#ffffff,#ffffff,#fff0a3,#ffffff,#17e1e8);
+  	
+}
+
+.etm_heading
+{
+	background-image: url(Etmthree.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	padding: 80px;
+	border: 2px solid #3d2b17;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 6px #402e05;
+	
+
+}
+
+.etm_headline
+{
+	color: #fff8ab;
+	font-size: 4em;
+	text-shadow: 4px 4px 8px #000000;
+	background-color: rgba(97, 46, 4,0.3);
+	border-bottom: 4px solid  #fff8ab;
+	border-top: 4px solid  #fff8ab;
+	
+}
+
+
+
+.row_style
+{
+	margin: 20px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+
+.etm-card-body
+{
+	margin: 15px;
+	opacity: 0.9;
+	padding: 10px;
+	border: 1px groove #0c0875;
+	transition: width 0.5s, height 0.5s;
+	
+}
+.etm-card-body:hover
+{
+	opacity: 2.0;
+	border: 1px solid #0c0875;
+	background-color: rgba(242, 237, 90,0.3);
+	box-shadow: 0 8px 8px 0 rgba(64, 46, 5, 0.5), 0 18px 20px 0 rgba(64, 46, 5, 0.4);
+	width: 400px;
+	height:200px;
+	padding: 30px;
+}
+
+/*science faculty*/
+.science_heading
+{
+	background-image: url(scone.jpg);
+	background-size: 1200px 300px;
+	padding: 80px;
+	border: 2px solid #3d2b17;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 6px #402e05;
+
+	
+
+}
+
+.science_headline
+{
+	color: #2ac1db;
+	font-size: 4em;
+	text-shadow: 5px 5px 7px #141936;
+	background-color: rgba(165, 166, 232,0.3);
+	border-top: 4px solid #2ac1db;
+	border-bottom:  4px solid #2ac1db;
+}
+
+.sc-body
+{
+	background-image: linear-gradient(to bottom left,#ffffff,#ffffff,#9effe4,#ffffff,#04026e);
+}
+
+/*Arts Faculty*/
+
+.art_heading
+{
+	background-image: url(arttwo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 80px;
+	border: 2px solid #3d2b17;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 6px #402e05;
+}
+
+.art_headline
+{
+	color: #fafa2f;
+	font-size: 4em;
+	font-weight: 700;
+	text-shadow: 6px 6px 4px #1a2b2a;
+	background-color: rgba(240, 158, 200,0.3);
+	border-bottom: 4px solid #fafa2f;
+	border-top: 4px solid #fafa2f;
+}
+
+.arts-body
+{
+	background-image: linear-gradient(to bottom ,#ffffff,#ffeeed,#61ebf2,#ffffff,#3c516e);
+}
+
+/*Education Faculty*/
+
+.ed_heading
+{
+	background-image: url(edone.jpg);
+	background-size: 1200px 250px;
+	background-repeat: repeat;
+	padding: 80px;
+	border: 2px solid #3d2b17;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 6px #402e05;
+}
+
+.ed_headline
+{
+	color:#f5ee93;
+	font-size: 3.5em;
+	font-weight: 700;
+	text-shadow: 7px 7px 5px #010770;
+	background-color: rgba(10, 74, 25,0.3);
+	border-bottom: 4px solid #f5ee93;
+	border-top:  4px solid #f5ee93;
+}
+
+.ed-body
+{
+	background-image: linear-gradient(to right ,#82faba,#ffffff,#20fa53,#61ebf2,#ffffff,#edf55f);
+}	
+
+/*Commerce Faculty*/
+
+.commerce_heading
+{
+	background-image: url(commone.jpg);
+	background-repeat: no-repeat;
+	padding: 80px;
+	border: 2px solid #3d2b17;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 6px #04012b;
+}
+
+.commerce_headline
+{
+	color: #06004a;
+	font-size: 3.5em;
+	font-weight: 700;
+	text-shadow: 6px 6px 5px #97f7e7;
+	background-color: rgba(31, 32, 99,0.4);
+	border-top: 4px solid #06004a;
+	border-bottom: 4px solid #06004a;
+}
+
+.comm-card
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+	border:1px groove #0c0875;
+	opacity: 0.9;
+	padding: 10px; 
+	transition: width 0.5s, height 0.5s;
+	margin-top: 30px;
+}
+
+.comm-card:hover
+{
+	opacity: 2.0;
+	border: 1px solid #0c0875;
+	background-color: rgba(255, 255, 255,0.4);
+	box-shadow: 0 8px 8px 0 rgba(64, 46, 5, 0.5), 0 18px 20px 0 rgba(64, 46, 5, 0.4);
+	width: 450px;
+	height:250px;
+	padding: 45px;
+}
+
+.commerce-body
+{
+	background-image: linear-gradient(to right ,#ffffff,#5cf7ea,#e1fa52,#ffffff,#e1fa52,#5cf7ea,#ffffff);
+
+}
