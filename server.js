@@ -6,6 +6,9 @@ const app = express();
 const nodemon = require('nodemon');
 const mysql = require('mysql');
 const body_parser = require('body-parser');
+const { connect } = require('http2');
+
+var loginStatus = false;
 
 app.use(body_parser.json());
 app.use(body_parser.urlencoded({
@@ -71,12 +74,21 @@ app.post('/post/loginSuccess', (request, response) => {
 
     const roll = request.body.roll;
     const password = request.body.password;
+    const update = request.body.update;
+    const updateName = request.body.updateName;
+
+    connection.query('UPDATE register SET name = '+mysql.escape(updateName)+'WHERE roll = '+mysql.escape(update),
+                                (error,results,field) => {
+                                    if(error) throw error;
+                                    console.log("Data Updated Successfully");
+                                })
 
     connection.query('SELECT * FROM register WHERE roll = '+mysql.escape(roll), 
                        (error, results, field) => {
                            if(error) throw error;
                            const receivedPassword = results[0].password;
                            if(receivedPassword == password){
+                               loginStatus = true;
                                response.send("Login Successfully "+results[0].name);
                            } else {
                                response.send("Try again");
@@ -93,7 +105,8 @@ app.post('/post/register', (request, response) => {
     const password = request.body.password;
     const confirmPassword = request.body.confirmPassword;
 
-    connection.query('INSERT INTO register VALUES('+mysql.escape(roll)+','
+    if(password == confirmPassword){
+        connection.query('INSERT INTO register VALUES('+mysql.escape(roll)+','
                                                    +mysql.escape(name)+','
                                                    +mysql.escape(email)+','
                                                    +mysql.escape(password)+','
@@ -101,6 +114,10 @@ app.post('/post/register', (request, response) => {
                                                        if(error) throw error;
                                                        response.send("Data Inserted Successfully");
                                                    })
+    } else {
+        response.send("Password and confirm password should be same");
+    }
+   
     //console.log(name,email,roll,confirmPassword,password);
 })
 
