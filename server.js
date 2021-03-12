@@ -27,7 +27,7 @@ connection.connect( (err)=> {
         console.log(err);
         return;
     } else {
-        console.log("Sucess");
+        console.log("Success");
     }
 });
 
@@ -74,14 +74,12 @@ app.post('/post/loginSuccess', (request, response) => {
 
     const roll = request.body.roll;
     const password = request.body.password;
-    const update = request.body.update;
-    const updateName = request.body.updateName;
 
-    connection.query('UPDATE register SET name = '+mysql.escape(updateName)+'WHERE roll = '+mysql.escape(update),
-                                (error,results,field) => {
-                                    if(error) throw error;
-                                    console.log("Data Updated Successfully");
-                                })
+    // connection.query('UPDATE register SET name = '+mysql.escape(updateName)+'WHERE roll = '+mysql.escape(update),
+    //                             (error,results,field) => {
+    //                                 if(error) throw error;
+    //                                 console.log("Data Updated Successfully");
+    //                             })
 
     connection.query('SELECT * FROM register WHERE roll = '+mysql.escape(roll), 
                        (error, results, field) => {
@@ -121,6 +119,6 @@ app.post('/post/register', (request, response) => {
     //console.log(name,email,roll,confirmPassword,password);
 })
 
-app.listen(8084, (request, response) => {
+app.listen(9000, (request, response) => {
     console.log("Server has started");
 })
