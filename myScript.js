@@ -18,6 +18,11 @@ function toggle(){
 
     var popup = document.getElementById('popup');
     popup.classList.toggle('active');
+
+    var bodyClass = document.getElementById('bodyClass');
+    bodyClass.classList.toggle('active');
+    //document.body.style.position = "fixed";
+
 }
 
 function stopMoving(){

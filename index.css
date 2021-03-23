@@ -2,9 +2,10 @@
     background-color: #ff4c68;
 }
 
-.back#blur.active{
+#blur.active{
     filter: blur(10px);
     transition: 0.2s;
+    position: fixed;
 }
 
 #popup{

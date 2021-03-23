@@ -27,7 +27,7 @@ connection.connect( (err)=> {
         console.log(err);
         return;
     } else {
-        console.log("Database Connected");
+        console.log("Success");
     }
 });
 
@@ -119,6 +119,6 @@ app.post('/post/register', (request, response) => {
     //console.log(name,email,roll,confirmPassword,password);
 })
 
-app.listen(8000, (request, response) => {
+app.listen(9001, (request, response) => {
     console.log("Server has started");
 })
